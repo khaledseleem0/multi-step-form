@@ -19,6 +19,13 @@ body{
      /* width: 100%; */
      padding: 20px;
      font-size: 13px;
+     position: absolute;
+     bottom: 0;
+     margin: 0 auto;
+     left: 50%;
+     transform: translate(-50%,50%);
+     width: 100%;
+
    }
 /* */
 
