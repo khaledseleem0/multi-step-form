@@ -1,0 +1,35 @@
+.addon__container{
+     padding: 20px;
+     border: 5px;
+     border: 1px solid var(--Light-gray);
+     border-radius: 10px;
+     margin: 20px 0;
+     transition: 0.2s;
+     display: grid;
+     grid-template-columns: auto 3fr 1fr;
+
+
+
+}
+.check__box{
+      width: 22px;
+      height: 22px;
+      position: relative;
+      border-radius: 4px;
+     border: 1px solid var(--Cool-gray);
+     margin-right: 20px;
+}
+.check__box input ~ div   {
+     opacity: 0;
+}
+
+.check__box input:checked ~ div   {
+   opacity: 1;
+}
+.check__box input:checked ~ div   {
+     background:var(--Purplish-blue);
+     width: 22px;
+     height: 22px;
+     border-radius: 4px;
+}
+

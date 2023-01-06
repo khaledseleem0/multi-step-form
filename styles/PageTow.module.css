@@ -1,0 +1,103 @@
+.plans div{
+     position: relative;
+
+}
+.plans{
+     display: grid;
+     grid-template-columns: 125px 125px 125px ;
+     height: 150px;
+     justify-content: space-between;
+}
+.plan{
+     /* background: #000; */
+     padding: 15px;
+     border: 1px solid var(--Light-gray);
+     border-radius: 10px;
+     display: flex;
+     align-content: space-between;
+     justify-content: space-between;
+     flex-flow: column;
+     height: 100%;
+   }
+.plan div  p {
+     /* line-height: 150%; */
+     padding: 2px 0;
+}
+.switcher__container{
+     margin: 30px 0;
+     height: 45px;
+     background:var(--Alabaster);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border-radius: 10px;
+}
+.switcher__container p{
+     transition: .5s;
+
+}
+
+.switcher{
+     width: 40px;
+     height: 25px;
+     background: #000;
+     padding: 5px;
+     border-radius: 20px;
+     position: relative;
+     margin: 0 25px;
+
+}.switcher span{
+     display: block;
+     background: #fff;
+     width: 15px;
+     height: 15px;
+     border-radius: 50%;
+     transition: .5s;
+     transform:translateX(15px)
+
+}
+.switcher input, .plans > div > input {
+     display: block;
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     right:0;
+     left: 0;
+     cursor: pointer;
+     width: 100%;
+     height: 100%;
+     opacity: 0;
+     z-index: 20000;
+}
+
+.switcher input:checked ~ span{
+     transform:translateX(0)
+
+}
+ input:checked + .plan {
+     background: var(--Alabaster);
+     border-color: var(--Purplish-blue);
+}
+
+
+
+@media (max-width: 900px) {
+     .plans{
+      
+          grid-template-columns: 1fr;
+          height: auto;
+          gap: 15px 0;
+     }
+     .plan{
+          /* background: #000; */
+          padding: 15px;
+          border: 1px solid var(--Light-gray);
+          border-radius: 10px;
+          display: flex;
+          align-content: space-between;
+          justify-content: space-between;
+          flex-flow: row;
+          min-height: 75px;
+
+        }
+}
