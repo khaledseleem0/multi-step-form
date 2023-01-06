@@ -14,7 +14,12 @@ body{
      background-color:#eef5ff;
      background:var(--Magnolia);
 }
-
+.attribution{
+     text-align: center;
+     /* width: 100%; */
+     padding: 20px;
+     font-size: 13px;
+   }
 /* */
 
 button{

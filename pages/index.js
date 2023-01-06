@@ -31,9 +31,14 @@ export default function Home() {
     }
   }
   return (
+    <>
+    
+
     <div className={styles.container}>
       <Head>
-        <title>Form</title>
+        <title>Frontend Mentor | Multi-step form</title>
+
+
         <meta name="description" content="Multi Step Form" />
         <link rel="icon" href="/favicon-32x32.png" />
       </Head>
@@ -45,7 +50,14 @@ export default function Home() {
             <Controls navigator={[Context, setContext]} />
           )}
         </div>
+        
       </div>
+ 
     </div>
+    <div class="attribution">
+  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+  Coded by<a href="https://twitter.com/@Khaled70834970"> Khalid Seleem</a>.
+</div>
+ </>
   );
 }
