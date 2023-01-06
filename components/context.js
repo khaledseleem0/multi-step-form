@@ -4,9 +4,9 @@ export const FormContext = createContext();
 
 export default function ContextWrapper({ Children }) {
   const [Context, setContext] = useState({
-    data: {userName:"0"},
-    step: 4,
-    plan: { subscription: "monthly", planInfo: {id:1}, addons: [0] },
+    data: {},
+    step: 1,
+    plan: { subscription: "monthly", planInfo: {}, addons: [] },
   });
   // subscribtion
 
