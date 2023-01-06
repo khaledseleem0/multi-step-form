@@ -13,6 +13,9 @@
 body{
      background-color:#eef5ff;
      background:var(--Magnolia);
+     position: relative;
+     min-height: 100vh;
+     overflow-x: hidden;
 }
 .attribution{
      text-align: center;
